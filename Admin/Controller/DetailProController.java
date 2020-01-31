@@ -23,6 +23,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.TextField;
 import javafx.scene.text.Text;
 
 /**
@@ -32,10 +33,10 @@ import javafx.scene.text.Text;
 public class DetailProController implements Initializable {
     
     @FXML
-    private Text Probleme;
+    private Text  Probleme;
 
     @FXML
-    private Text Solutions;
+    private Text  Solutions;
     daoProbleme daoP = new daoProbleme(Layout_adminController.db);
     void loadPr(String path ){
         File file = new File(path);
@@ -88,9 +89,11 @@ public class DetailProController implements Initializable {
         daoSolution daoS = new daoSolution(Layout_adminController.db);
         
         try {
-            ResultSet Rs = daoP.find(Listeproblemes.id);
+            System.out.println("Id of prblm " +ProController.id);
+            ResultSet Rs = daoP.find(ProController.id);
+            
             loadPr(Rs.getString(2));
-            ResultSet R = daoS.find(Rs.getString(2));
+            ResultSet R = daoS.find(ProController.id);
             loadSo(R.getString(3));
         } catch (SQLException ex) {
             Logger.getLogger(DetailProController.class.getName()).log(Level.SEVERE, null, ex);
