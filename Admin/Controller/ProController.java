@@ -148,7 +148,7 @@ public class ProController implements Initializable {
         Probleme P = tableView.getSelectionModel().getSelectedItem();
         if (daoS.delete(P.getId_Probleme())) {
             if (daoP.delete(P.getId_Probleme())) {
-                tableView.refresh();
+                tableView.getItems().remove(P);
                 System.out.println("deleted");
             } else {
                 System.out.println("error");
