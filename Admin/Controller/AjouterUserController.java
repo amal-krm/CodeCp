@@ -44,8 +44,8 @@ public class AjouterUserController implements Initializable {
     @FXML
     private Button enregistrer;
 
-    @FXML
-    private PasswordField ConfirmerEmail;
+     @FXML
+    private TextField ConfirmerEmail;
 
     @FXML
     private Button Annuler;
