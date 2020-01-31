@@ -6,14 +6,22 @@
 package Admin.Controller;
 
 import Database.Database;
+import com.sun.glass.ui.Window;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.scene.control.MenuItem;
 import javafx.scene.layout.AnchorPane;
+import javafx.stage.Stage;
 
 /**
  * FXML Controller class
@@ -26,10 +34,13 @@ public class Layout_adminController implements Initializable {
     private AnchorPane rootPane;
     public static String Id;
     public static Database db ;
+      boolean  connect;
     
     public AnchorPane getRootPane() {
         return rootPane;
     }
+        @FXML
+    private MenuItem logOut1;
 
 //    public Layout_adminController(String Id) {
 //        System.out.println(Id);
@@ -91,6 +102,11 @@ public class Layout_adminController implements Initializable {
         AnchorPane pane = loader.load();
         rootPane.getChildren().setAll(pane);
     }
+        @FXML
+    void logOut(ActionEvent event) throws IOException {
+
+                 
+    }
     
     
     @Override
@@ -110,6 +126,18 @@ public class Layout_adminController implements Initializable {
 //        //this.Id = Id;
 //        //System.out.println("Id d layout =" + Id);
 //        this.db = db;
+
+   FXMLLoader loader = new FXMLLoader(getClass().getResource("/Admin/fxml/Dashboard.fxml"));
+        //DashboardController DS = new DashboardController();
+        //DS.initData(Id , db);
+        AnchorPane pane;
+        try {
+            pane = loader.load();
+                    rootPane.getChildren().setAll(pane);
+
+        } catch (IOException ex) {
+            Logger.getLogger(Layout_adminController.class.getName()).log(Level.SEVERE, null, ex);
+        }
  }
     
     
