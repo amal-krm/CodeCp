@@ -26,32 +26,24 @@
                         <Pane prefHeight="584.0" prefWidth="421.0" style="-fx-border-style: #fff;">
                            <children>
                               <Line endY="355.33331298828125" layoutX="419.0" layoutY="140.0" startY="-100.0" stroke="SLATEGRAY" strokeWidth="3.0" />
-                              <Label alignment="CENTER" layoutX="20.0" prefHeight="59.0" prefWidth="324.0" text="nom du probleme" textAlignment="CENTER">
+                              <Label alignment="CENTER" layoutX="46.0" prefHeight="59.0" prefWidth="324.0" text="nom du probleme" textAlignment="CENTER">
                                  <font>
                                     <Font name="Bell MT" size="36.0" />
                                  </font>
                               </Label>
-                              <Text fx:id="Probleme" layoutX="14.0" layoutY="89.0" strokeType="OUTSIDE" strokeWidth="0.0" text="hello world" wrappingWidth="386.13671875">
-                                 <font>
-                                    <Font size="14.0" />
-                                 </font>
-                              </Text>
                               <Pane layoutX="55.0" layoutY="51.0" prefHeight="7.0" prefWidth="289.0" style="-fx-background-color: #0747A8; -fx-background-radius: 10;" />
+                              <Text fx:id="Probleme" layoutX="20.0" layoutY="86.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
                            </children>
                         </Pane>
                         <Pane prefHeight="584.0" prefWidth="421.0">
                            <children>
-                              <Label alignment="CENTER" layoutY="-4.0" prefHeight="60.0" prefWidth="324.0" text="Solution" textAlignment="CENTER">
+                              <Label alignment="CENTER" layoutX="31.0" prefHeight="60.0" prefWidth="324.0" text="Solution" textAlignment="CENTER">
                                  <font>
                                     <Font name="Bell MT" size="36.0" />
                                  </font>
                               </Label>
-                              <Text fx:id="Solutions" layoutX="24.0" layoutY="93.0" strokeType="OUTSIDE" strokeWidth="0.0" text="hello  world" wrappingWidth="386.13671875">
-                                 <font>
-                                    <Font size="14.0" />
-                                 </font>
-                              </Text>
                               <Pane layoutX="103.0" layoutY="48.0" prefHeight="8.0" prefWidth="185.0" style="-fx-background-color: #0747A8; -fx-background-radius: 10;" />
+                              <Text fx:id="Solutions" layoutX="14.0" layoutY="92.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
                            </children>
                         </Pane>
                      </children>
