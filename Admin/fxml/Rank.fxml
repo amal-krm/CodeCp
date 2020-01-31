@@ -29,7 +29,7 @@
                         <TableColumn fx:id="col_Score" prefWidth="246.0" text="Score" />
                     </columns>
                   </TableView>
-                  <Label layoutX="80.0" layoutY="47.0" prefHeight="66.0" prefWidth="435.0" text="Ranking:" textFill="#171474" AnchorPane.leftAnchor="80.0" AnchorPane.rightAnchor="320.0" AnchorPane.topAnchor="47.0">
+                  <Label layoutX="80.0" layoutY="47.0" prefHeight="66.0" prefWidth="435.0" text="Le rang:" textFill="#171474" AnchorPane.leftAnchor="80.0" AnchorPane.rightAnchor="320.0" AnchorPane.topAnchor="47.0">
                      <font>
                         <Font size="24.0" />
                      </font>

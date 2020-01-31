@@ -25,7 +25,7 @@
                               <Insets left="150.0" />
                            </HBox.margin>
                            <children>
-                              <Label fx:id="nom" prefHeight="35.0" prefWidth="114.0" text="ahmed" textFill="WHITE">
+                              <Label fx:id="nom" prefHeight="35.0" prefWidth="114.0" textFill="WHITE">
                                  <HBox.margin>
                                     <Insets bottom="40.0" left="50.0" top="20.0" />
                                  </HBox.margin>
@@ -33,7 +33,7 @@
                                     <Font size="24.0" />
                                  </font>
                               </Label>
-                              <Label fx:id="prenom" prefHeight="35.0" prefWidth="140.0" text="Mouttaki" textFill="WHITE">
+                              <Label fx:id="prenom" prefHeight="35.0" prefWidth="140.0" textFill="WHITE">
                                  <HBox.margin>
                                     <Insets bottom="40.0" top="20.0" />
                                  </HBox.margin>
@@ -132,27 +132,27 @@
                         </VBox>
                         <VBox layoutX="384.0" layoutY="9.0" prefHeight="385.0" prefWidth="315.0">
                            <children>
-                              <Label fx:id="username" prefHeight="77.0" prefWidth="317.0" text=" whoami" textFill="#171474">
+                              <Label fx:id="username" prefHeight="77.0" prefWidth="317.0" textFill="#171474">
                                  <font>
                                     <Font size="24.0" />
                                  </font>
                               </Label>
-                              <Label fx:id="email" prefHeight="77.0" prefWidth="318.0" text="ahmed@gmail.com" textFill="#171474">
+                              <Label fx:id="email" prefHeight="77.0" prefWidth="318.0" textFill="#171474">
                                  <font>
                                     <Font size="24.0" />
                                  </font>
                               </Label>
-                              <Label fx:id="tele" prefHeight="76.0" prefWidth="309.0" text="0654367898" textFill="#171474">
+                              <Label fx:id="tele" prefHeight="76.0" prefWidth="309.0" textFill="#171474">
                                  <font>
                                     <Font size="24.0" />
                                  </font>
                               </Label>
-                              <Label fx:id="language" prefHeight="80.0" prefWidth="315.0" text="Java" textFill="#171474">
+                              <Label fx:id="language" prefHeight="80.0" prefWidth="315.0" textFill="#171474">
                                  <font>
                                     <Font size="24.0" />
                                  </font>
                               </Label>
-                              <Label fx:id="date" prefHeight="91.0" prefWidth="316.0" text="26/01/2020" textFill="#171474">
+                              <Label fx:id="date" prefHeight="91.0" prefWidth="316.0" textFill="#171474">
                                  <font>
                                     <Font size="24.0" />
                                  </font>

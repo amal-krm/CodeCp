@@ -1,11 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import javafx.geometry.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
-<?import javafx.scene.shape.*?>
-<?import javafx.scene.text.*?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
@@ -17,7 +11,7 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="581.0" prefWidth="835.0" style="-fx-border-color: #2448D5;" stylesheets="@../../css/login.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Admin.Controller.AjoutProblm">
+<AnchorPane id="AnchorPane" prefHeight="581.0" prefWidth="835.0" style="-fx-border-color: #2448D5;" stylesheets="@../../css/login.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Admin.Controller.AjoutProblm">
    <children>
       <BorderPane prefHeight="581.0" prefWidth="835.0">
          <center>
@@ -84,29 +78,29 @@
                               </Button>
                            </children>
                         </VBox>
-                        <VBox layoutX="27.0" layoutY="45.0" prefHeight="292.0" prefWidth="147.0" spacing="25.0">
+                        <VBox layoutX="27.0" layoutY="45.0" prefHeight="292.0" prefWidth="169.0" spacing="25.0">
                            <children>
-                              <Label prefHeight="42.0" prefWidth="127.0" text="Titre">
+                              <Label prefHeight="35.0" prefWidth="170.0" text="Titre        :    " textFill="#171474">
                                  <font>
                                     <Font name="Bell MT" size="30.0" />
                                  </font>
                               </Label>
-                              <Label layoutX="10.0" layoutY="10.0" prefHeight="42.0" prefWidth="127.0" text="Niveau">
+                              <Label layoutX="10.0" layoutY="10.0" prefHeight="39.0" prefWidth="148.0" text="Niveau     : " textFill="#171474">
                                  <font>
                                     <Font name="Bell MT" size="30.0" />
                                  </font>
                               </Label>
-                              <Label layoutX="10.0" layoutY="10.0" prefHeight="42.0" prefWidth="127.0" text="Problème">
+                              <Label layoutX="10.0" layoutY="10.0" prefHeight="40.0" prefWidth="154.0" text="Problème :" textFill="#171474">
                                  <font>
                                     <Font name="Bell MT" size="30.0" />
                                  </font>
                               </Label>
-                              <Label layoutX="10.0" layoutY="52.0" prefHeight="42.0" prefWidth="127.0" text="Solution">
+                              <Label layoutX="10.0" layoutY="52.0" prefHeight="41.0" prefWidth="153.0" text="Solution   :" textFill="#171474">
                                  <font>
                                     <Font name="Bell MT" size="30.0" />
                                  </font>
                               </Label>
-                              <Label layoutX="10.0" layoutY="136.0" prefHeight="42.0" prefWidth="127.0" text="Test case">
+                              <Label layoutX="10.0" layoutY="136.0" prefHeight="41.0" prefWidth="174.0" text="Test case  :" textFill="#171474">
                                  <font>
                                     <Font name="Bell MT" size="30.0" />
                                  </font>

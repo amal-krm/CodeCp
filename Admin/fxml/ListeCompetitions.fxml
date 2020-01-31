@@ -23,7 +23,7 @@
          <children>
             <AnchorPane prefHeight="566.0" prefWidth="835.0">
                <children>
-                  <Button layoutX="107.0" layoutY="530.0" mnemonicParsing="false" onAction="#AfficherComp" prefHeight="35.0" prefWidth="181.0" style="-fx-background-color: #0747A8;" text=" Voir detail" textFill="WHITE" AnchorPane.bottomAnchor="16.0">
+                  <Button layoutX="107.0" layoutY="530.0" mnemonicParsing="false" onAction="#AfficherComp" prefHeight="35.0" prefWidth="181.0" style="-fx-background-color: #0747A8;" text="Voir les détails" textFill="WHITE" AnchorPane.bottomAnchor="16.0">
                      <font>
                         <Font size="18.0" />
                      </font></Button>

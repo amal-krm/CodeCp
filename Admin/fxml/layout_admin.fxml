@@ -1,13 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import javafx.geometry.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.image.*?>
-<?import javafx.scene.layout.*?>
-<?import javafx.scene.text.*?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -16,11 +12,11 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="1103.0" style="-fx-border-color: #2448D5;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Admin.Controller.Layout_adminController">
+<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="1103.0" style="-fx-border-color: #2448D5;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Admin.Controller.Layout_adminController">
    <children>
       <AnchorPane layoutX="-5.0" layoutY="109.0" prefHeight="589.0" prefWidth="304.0" style="-fx-background-color: #0747A8;" AnchorPane.bottomAnchor="2.0" AnchorPane.leftAnchor="-6.0" AnchorPane.topAnchor="108.0">
          <children>
-            <GridPane layoutX="13.899999618530273" layoutY="70.0" prefHeight="380.0" prefWidth="265.0" AnchorPane.bottomAnchor="126.0" AnchorPane.leftAnchor="18.0" AnchorPane.rightAnchor="21.0" AnchorPane.topAnchor="82.0">
+            <GridPane layoutX="13.899999618530273" layoutY="70.0" prefHeight="486.0" prefWidth="265.0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="18.0" AnchorPane.rightAnchor="21.0" AnchorPane.topAnchor="82.0">
                <columnConstraints>
                   <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
                </columnConstraints>
@@ -39,7 +35,7 @@
                      <font>
                         <Font size="18.0" />
                      </font></Button>
-                  <Button mnemonicParsing="false" onAction="#Probleme" prefHeight="67.0" prefWidth="278.0" style="-fx-background-color: #0747A8;" text="Problemes" textFill="WHITE" GridPane.rowIndex="1">
+                  <Button mnemonicParsing="false" onAction="#Probleme" prefHeight="67.0" prefWidth="278.0" style="-fx-background-color: #0747A8;" text="Problème" textFill="WHITE" GridPane.rowIndex="1">
                      <font>
                         <Font size="18.0" />
                      </font></Button>
@@ -51,7 +47,7 @@
                         <Insets left="20.0" />
                      </GridPane.margin>
                   </ImageView>
-                  <Button mnemonicParsing="false" onAction="#Competitions" prefHeight="67.0" prefWidth="265.0" style="-fx-background-color: #0747A8;" text="Competitions" textFill="WHITE" GridPane.rowIndex="2">
+                  <Button mnemonicParsing="false" onAction="#Competitions" prefHeight="67.0" prefWidth="265.0" style="-fx-background-color: #0747A8;" text="Compétition " textFill="WHITE" GridPane.rowIndex="2">
                      <font>
                         <Font size="18.0" />
                      </font></Button>
@@ -119,6 +115,11 @@
                         <Image url="@../../images/notif.png" />
                      </image>
                   </ImageView>
+                  <MenuButton layoutX="1002.0" layoutY="37.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="65.0" style="-fx-background-color: none;">
+                    <items>
+                      <MenuItem mnemonicParsing="false" onAction="#logOut" text="Déconnexion" />
+                    </items>
+                  </MenuButton>
                </children>
             </AnchorPane>
          </children>
