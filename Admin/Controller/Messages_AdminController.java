@@ -63,7 +63,7 @@ public class Messages_AdminController implements Initializable {
     private Button Annuler;
     @FXML
     private Button Enregistrer;
-     
+    public static String id;
    
   
     
@@ -109,7 +109,7 @@ public class Messages_AdminController implements Initializable {
         try {               
 
             while (Rs.next()) {
-                data_table.add(new Message_Perso( Rs.getString(1), Rs.getString(2),Rs.getString(4),Rs.getString(7)));
+                data_table.add(new Message_Perso( Rs.getString(3), Rs.getString(1), Rs.getString(2),Rs.getString(4),Rs.getString(7)));
 
             }
         } catch (SQLException ex) {
@@ -139,34 +139,34 @@ public class Messages_AdminController implements Initializable {
         stage.setScene(scene);
         stage.show();
     }
-     @FXML
-    
-    void EnvoyerDef(ActionEvent event){
-         if(Recep.getText() != null){
-             if(createMsg()){
-                 //mesage sent
-                 
-             }else{
-                 //msg Non envoye erreur
-             }
-         } 
-    }
-    private boolean createMsg(){
-        daoUser U = new daoUser(Layout_adminController.db);
-        String Id_Recep = U.findId(Recep.getText());
-        if(Id_Recep.equals("")){
-            //username incorrect
-            return false;
-        }
-        Message_Perso Ms = new Message_Perso(Layout_adminController.Id,Id_Recep , Msg.getText(), Obj.getText());
-        //System.out.println(Layout_adminController.Id+" "+Recep.getText()+" "+Msg.getText()+" "+Obj.getText());
-        if(DaoM.create(Ms)){
-             //System.out.println("Msg envoyer");
-             return true;
-         }
-             //System.out.println("Msg Non envoye");
-             return false;
-   }
+//     @FXML
+//    
+//    void EnvoyerDef(ActionEvent event){
+//         if(Recep.getText() != null){
+//             if(createMsg()){
+//                 //mesage sent
+//                 
+//             }else{
+//                 //msg Non envoye erreur
+//             }
+//         } 
+//    }
+//    private boolean createMsg(){
+//        daoUser U = new daoUser(Layout_adminController.db);
+//        String Id_Recep = U.findId(Recep.getText());
+//        if(Id_Recep.equals("")){
+//            //username incorrect
+//            return false;
+//        }
+//        Message_Perso Ms = new Message_Perso(Layout_adminController.Id,Id_Recep , Msg.getText(), Obj.getText());
+//        //System.out.println(Layout_adminController.Id+" "+Recep.getText()+" "+Msg.getText()+" "+Obj.getText());
+//        if(DaoM.create(Ms)){
+//             //System.out.println("Msg envoyer");
+//             return true;
+//         }
+//             //System.out.println("Msg Non envoye");
+//             return false;
+//   }
    @FXML
     void showmsgenvoye(ActionEvent event) {
         //voir les msg envoye
@@ -186,7 +186,23 @@ public class Messages_AdminController implements Initializable {
         stage.show();
         
     } 
-   
+    @FXML
+    void Detail(ActionEvent event) throws IOException {
+        Message_Perso Ms = tableView.getSelectionModel().getSelectedItem();
+        //System.out.println(Comp.getIdCompetition());
+        //ResultSet idi = daoM.find(Ms.getId_Msg());
+        //idi.next();
+        this.id = Ms.getId_Msg();
+        //System.out.println("hna"+id);
+//        //System.out.println(id);
+        Parent root = FXMLLoader.load(getClass().getResource("/Admin/fxml/Detail_msg.fxml"));
+        Scene scene = new Scene(root);
+        Stage stage = new Stage();
+        stage.setResizable(false);
+
+        stage.setScene(scene);
+        stage.show();
+    }
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         initTable();

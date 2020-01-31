@@ -87,7 +87,9 @@ public class AjouterUserController implements Initializable {
               //enregistrer User
               String Password = RandomPassword();
               
-              User U = new User(Password,E );
+
+              User U = new User(Password, E );
+
               if(daoU.create(U)){
                   try {
                       JavaMailUtil.sendMail(E , Password);

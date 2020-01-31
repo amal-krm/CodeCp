@@ -47,13 +47,13 @@ public class DashboardController implements Initializable {
     public void TheLast() throws SQLException{
        ResultSet Rs=  daoU.LastUsers();
       // Rs.next();
-       name1.setText(Rs.getString(2));
-       Rs.next();
-       name2.setText(Rs.getString(2));
-       Rs.next();
-       name3.setText(Rs.getString(2));
-       Rs.next();
-       name4.setText(Rs.getString(2));
+//       name1.setText(Rs.getString(2));
+//       Rs.next();
+//       name2.setText(Rs.getString(2));
+//       Rs.next();
+//       name3.setText(Rs.getString(2));
+//       Rs.next();
+//       name4.setText(Rs.getString(2));
     }
     
     @Override
