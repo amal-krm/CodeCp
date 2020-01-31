@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="1113.0" style="-fx-border-color: #2448D5;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <GridPane prefHeight="581.0" prefWidth="835.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <TabPane prefHeight="581.0" prefWidth="835.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <tabs>
+                      <Tab text="Messages">
+                           <content>
+                              <AnchorPane prefHeight="566.0" prefWidth="835.0">
+               <children>
+                  <Button layoutX="107.0" layoutY="530.0" mnemonicParsing="false" onAction="" prefHeight="35.0" prefWidth="181.0" style="-fx-background-color: #0747A8;" text=" Voir detail" textFill="WHITE" AnchorPane.bottomAnchor="16.0">
+                     <font>
+                        <Font size="18.0" />
+                     </font></Button>
+                  <Button layoutX="338.0" layoutY="530.0" mnemonicParsing="false" onAction="EnvoyerMsg" prefHeight="35.0" prefWidth="181.0" style="-fx-background-color: #61c566;" text="Envoyer un msg" textFill="WHITE" AnchorPane.bottomAnchor="16.0">
+                     <font>
+                        <Font size="18.0" />
+                     </font></Button>
+                  <Button layoutX="566.0" layoutY="530.0" mnemonicParsing="false" onAction="" prefHeight="35.0" prefWidth="171.0" style="-fx-background-color: #e44646;" text="Supprimer" textFill="WHITE" AnchorPane.bottomAnchor="16.0">
+                     <font>
+                        <Font size="18.0" />
+                     </font></Button>
+                  <TableView fx:id="tableView" layoutX="80.0" layoutY="138.0" prefHeight="347.0" prefWidth="675.0" AnchorPane.bottomAnchor="96.0" AnchorPane.leftAnchor="80.0" AnchorPane.rightAnchor="80.0" AnchorPane.topAnchor="138.0">
+                    <columns>
+                      <TableColumn fx:id="col_username" prefWidth="83.5" text="#" />
+                      <TableColumn fx:id="col_nom" prefWidth="172.0" text="Emeteur" />
+                        <TableColumn fx:id="col_prenom" prefWidth="132.0" text="Date" />
+                                          <TableColumn fx:id="col_username1" minWidth="0.0" prefWidth="122.5" text="Vu" />
+                                          <TableColumn fx:id="col_username11" minWidth="0.0" prefWidth="165.5" text="Objet" />
+                    </columns>
+                  </TableView>
+                  <Label layoutX="80.0" layoutY="47.0" prefHeight="66.0" prefWidth="435.0" text="Liste des Messages :" textFill="#323136" AnchorPane.leftAnchor="80.0" AnchorPane.rightAnchor="320.0" AnchorPane.topAnchor="47.0">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <Pane layoutX="80.0" layoutY="95.0" prefHeight="7.0" prefWidth="238.0" style="-fx-background-color: #0747A8; -fx-background-radius: 10;" AnchorPane.leftAnchor="80.0" />
+               </children>
+            </AnchorPane>
+                           </content>
+                        </Tab>
+                        <Tab text="Clarifications">
+                           <content>
+                              <AnchorPane prefHeight="200.0" prefWidth="200.0" />
+                           </content></Tab>
+                    </tabs>
+                  </TabPane>
+               </children>
+            </AnchorPane>
+         </children>
+      </GridPane>
+   </children>
+   
+   
+
+</AnchorPane>

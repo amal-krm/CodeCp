@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+
+<Pane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #F5FFFA;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projet.Detail_messageController">
+   <children>
+      <VBox layoutX="14.0" layoutY="54.0" prefHeight="341.0" prefWidth="162.0">
+         <children>
+            <Label alignment="CENTER" prefHeight="72.0" prefWidth="162.0" text="Emeteur :" />
+            <Label alignment="CENTER" prefHeight="67.0" prefWidth="162.0" text="Objectif :" />
+            <Label alignment="CENTER" prefHeight="67.0" prefWidth="162.0" text="Date :" />
+            <Label alignment="CENTER" prefHeight="67.0" prefWidth="162.0" text="Message :" />
+         </children>
+      </VBox>
+      <VBox layoutX="177.0" layoutY="67.0" prefHeight="328.0" prefWidth="424.0">
+         <children>
+            <Label alignment="CENTER" prefHeight="62.0" prefWidth="416.0" text="Label" />
+            <Label alignment="CENTER" prefHeight="67.0" prefWidth="416.0" text="Label" />
+            <Label alignment="CENTER" prefHeight="68.0" prefWidth="416.0" text="Label" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="423.9830722808838" />
+         </children>
+      </VBox>
+      <Label alignment="CENTER" layoutX="194.0" layoutY="25.0" prefHeight="42.0" prefWidth="234.0" text="Detail du message" />
+   </children>
+</Pane>

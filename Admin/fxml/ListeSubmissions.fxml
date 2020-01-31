@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="581.0" prefWidth="835.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TabPane layoutY="80.0" prefHeight="498.0" prefWidth="835.0" tabClosingPolicy="UNAVAILABLE" tabMinHeight="30.0" tabMinWidth="200.0">
+         <tabs>
+            <Tab text="Problèmes">
+               <content>
+                  <AnchorPane>
+                     <children>
+                        <TableView layoutX="21.0" layoutY="23.0" prefHeight="379.0" prefWidth="756.0" AnchorPane.bottomAnchor="25.0" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="25.0">
+                           <columns>
+                              <TableColumn prefWidth="44.0" text="#" />
+                              <TableColumn prefWidth="135.0" text="Titre" />
+                              <TableColumn prefWidth="135.0" text="Niveau" />
+                              <TableColumn prefWidth="135.0" text="Résultat" />
+                              <TableColumn prefWidth="135.0" text="Date de submision" />
+                              <TableColumn prefWidth="210.0" text="Action" />
+                           </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="Compétitions">
+               <content>
+                  <AnchorPane>
+                     <children>
+                        <TableView layoutX="21.0" layoutY="23.0" prefHeight="379.0" prefWidth="756.0" AnchorPane.bottomAnchor="25.0" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="25.0">
+                           <columns>
+                              <TableColumn prefWidth="44.0" text="#" />
+                              <TableColumn prefWidth="135.0" text="Titre" />
+                              <TableColumn prefWidth="135.0" text="Niveau" />
+                              <TableColumn prefWidth="135.0" text="Résultat" />
+                              <TableColumn prefWidth="135.0" text="Date de submision" />
+                              <TableColumn prefWidth="210.0" text="Action" />
+                           </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+         </tabs>
+      </TabPane>
+      <Label layoutX="272.0" layoutY="25.0" text="Liste des submissions" AnchorPane.bottomAnchor="517.0" AnchorPane.leftAnchor="272.0" AnchorPane.rightAnchor="272.0" AnchorPane.topAnchor="25.0">
+         <font>
+            <Font name="Bell MT" size="33.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

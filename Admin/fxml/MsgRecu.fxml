@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="User.Controller.MsgRecuController">
+   <children>
+      <AnchorPane layoutX="62.0" layoutY="42.0" prefHeight="316.0" prefWidth="488.0">
+         <children>
+            <TableView fx:id="tableview" prefHeight="259.0" prefWidth="441.0">
+              <columns>
+                <TableColumn fx:id="Recepteur" prefWidth="75.0" text="Recepteur" />
+                <TableColumn fx:id="Obj" prefWidth="75.0" text="OBjet" />
+                  <TableColumn fx:id="Date" prefWidth="75.0" text="Date" />
+              </columns>
+            </TableView>
+            <Button layoutX="401.0" layoutY="279.0" mnemonicParsing="false" onAction="#ShowDetail" text="Detail" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
