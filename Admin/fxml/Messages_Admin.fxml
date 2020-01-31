@@ -35,7 +35,7 @@
                         <content>
                           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                                  <children>
-                                    <Button layoutX="130.0" layoutY="476.0" mnemonicParsing="false" onAction="#EnvoyerMsg" prefHeight="43.0" prefWidth="265.0" style="-fx-background-color: #61c566;" text="Envoyer un message" textFill="WHITE" AnchorPane.bottomAnchor="33.0">
+                                    <Button layoutX="57.0" layoutY="460.0" mnemonicParsing="false" onAction="#EnvoyerMsg" prefHeight="43.0" prefWidth="190.0" style="-fx-background-color: #61c566;" text="Envoyer un message" textFill="WHITE" AnchorPane.bottomAnchor="33.0">
                                        <font>
                                           <Font size="18.0" />
                                        </font>
@@ -60,6 +60,11 @@
                                     </Label>
                                     <Pane layoutX="57.0" layoutY="49.0" prefHeight="7.0" prefWidth="252.0" style="-fx-background-color: #0747A8; -fx-background-radius: 10;" />
                                     <Button layoutX="671.0" layoutY="14.0" mnemonicParsing="false" onAction="#showmsgenvoye" text="Msg envoye" />
+                                    <Button layoutX="277.0" layoutY="460.0" mnemonicParsing="false" onAction="#Detail" prefHeight="43.0" prefWidth="117.0" style="-fx-background-color: #61c566;" text="Detail" textFill="WHITE">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Button>
                                  </children></AnchorPane>
                         </content>
                       </Tab>
