@@ -6,11 +6,12 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane id="AnchorPane" prefHeight="581.0" prefWidth="835.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="User.Controller.VoirSubmitionController">
+<AnchorPane id="AnchorPane" prefHeight="581.0" prefWidth="835.0" stylesheets="@../../css/login.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="User.Controller.VoirSubmitionController">
    <children>
       <GridPane layoutX="18.0" layoutY="14.078125" AnchorPane.bottomAnchor="11.921875" AnchorPane.leftAnchor="18.0" AnchorPane.rightAnchor="43.0" AnchorPane.topAnchor="14.078125">
          <columnConstraints>
@@ -22,7 +23,7 @@
          <children>
             <AnchorPane prefHeight="566.0" prefWidth="835.0">
                <children>
-                  <Text layoutX="32.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Liste des submissions" textAlignment="CENTER" underline="true" AnchorPane.leftAnchor="32.0" AnchorPane.topAnchor="14.078125">
+                  <Text fill="#171474" layoutX="32.0" layoutY="40.921875" strokeType="OUTSIDE" strokeWidth="0.0" text="Liste des submissions :" textAlignment="CENTER" wrappingWidth="319.99999947845936" AnchorPane.leftAnchor="32.0" AnchorPane.topAnchor="14.0">
                      <font>
                         <Font name="Bell MT" size="32.0" />
                      </font>
@@ -33,16 +34,17 @@
                       <TableColumn maxWidth="1.7976931348623157E308" minWidth="-Infinity" prefWidth="370.0" text="Username" />
                     </columns>
                   </TableView>
-                  <Button layoutX="48.0" layoutY="518.921875" mnemonicParsing="false" onAction="#showSolution" styleClass="button1" stylesheets="@../../css/login.css" text="voir détail" AnchorPane.bottomAnchor="0.078125">
+                  <Button layoutX="48.0" layoutY="518.921875" mnemonicParsing="false" onAction="#showSolution" style="-fx-background-color: #708090;" styleClass="button1" stylesheets="@../../css/login.css" text="Voir les détails" AnchorPane.bottomAnchor="0.078125">
                      <font>
                         <Font name="Bell MT" size="19.0" />
                      </font>
                   </Button>
-                  <Button layoutX="170.0" layoutY="518.921875" mnemonicParsing="false" onAction="#Sendmsg" style="-fx-background-color: #61C566;" styleClass="button1" stylesheets="@../../css/login.css" text="Contacter" AnchorPane.bottomAnchor="0.078125">
+                  <Button layoutX="210.0" layoutY="519.0" mnemonicParsing="false" onAction="#Sendmsg" prefHeight="36.0" prefWidth="119.0" style="-fx-background-color: #61C566;" styleClass="button1" stylesheets="@../../css/login.css" text="Contacter" AnchorPane.bottomAnchor="0.0">
                      <font>
                         <Font name="Bell MT" size="19.0" />
                      </font>
                   </Button>
+                  <Pane layoutX="39.0" layoutY="49.0" prefHeight="8.0" prefWidth="320.0" style="-fx-background-radius: 30; -fx-background-color: #0747A8;" />
                </children>
             </AnchorPane>
          </children>

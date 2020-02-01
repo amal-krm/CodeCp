@@ -12,7 +12,7 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" fx:id="rootPane" prefHeight="581.0" prefWidth="835.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="User.Controller.Listeproblemes">
+<AnchorPane id="AnchorPane" fx:id="rootPane" prefHeight="581.0" prefWidth="835.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="User.Controller.Listeproblemes">
    <children>
       <GridPane prefHeight="581.0" prefWidth="835.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <columnConstraints>
@@ -24,7 +24,7 @@
          <children>
             <AnchorPane prefHeight="566.0" prefWidth="835.0">
                <children>
-                  <Button layoutX="80.0" layoutY="528.0" mnemonicParsing="false" onAction="#showProbleme" prefHeight="35.0" prefWidth="181.0" style="-fx-background-color: #0747A8;" text=" Voir detail" textFill="WHITE" AnchorPane.bottomAnchor="14.0">
+                  <Button layoutX="80.0" layoutY="528.0" mnemonicParsing="false" onAction="#showProbleme" prefHeight="35.0" prefWidth="181.0" style="-fx-background-color: #708090;" text="Voir les détails" textFill="WHITE" AnchorPane.bottomAnchor="14.0">
                      <font>
                         <Font size="18.0" />
                      </font></Button>
@@ -34,7 +34,7 @@
                       <TableColumn fx:id="niveau" prefWidth="340.0" text="Niveau" />
                     </columns>
                   </TableView>
-                  <Label layoutX="80.0" layoutY="47.0" prefHeight="66.0" prefWidth="435.0" text="Liste des problèmes :" textFill="#323136" AnchorPane.leftAnchor="80.0" AnchorPane.rightAnchor="320.0" AnchorPane.topAnchor="47.0">
+                  <Label layoutX="80.0" layoutY="47.0" prefHeight="66.0" prefWidth="435.0" text="Liste des problèmes :" textFill="#171474" AnchorPane.leftAnchor="80.0" AnchorPane.rightAnchor="320.0" AnchorPane.topAnchor="47.0">
                      <font>
                         <Font size="24.0" />
                      </font>

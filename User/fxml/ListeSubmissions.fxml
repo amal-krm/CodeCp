@@ -24,11 +24,11 @@
          <children>
             <AnchorPane prefHeight="566.0" prefWidth="835.0">
                <children>
-                  <Button layoutX="108.0" layoutY="522.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="181.0" style="-fx-background-color: #0747A8;" text=" Voir détail" textFill="WHITE" AnchorPane.bottomAnchor="20.0">
+                  <Button layoutX="108.0" layoutY="522.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="181.0" style="-fx-background-color: #708090;" text="Voir les détails" textFill="WHITE" AnchorPane.bottomAnchor="20.0">
                      <font>
                         <Font size="18.0" />
                      </font></Button>
-                  <Label layoutX="80.0" layoutY="47.0" prefHeight="66.0" prefWidth="435.0" text="Mes submissions:" textFill="#323136" AnchorPane.leftAnchor="80.0" AnchorPane.rightAnchor="320.0" AnchorPane.topAnchor="47.0">
+                  <Label layoutX="80.0" layoutY="47.0" prefHeight="66.0" prefWidth="435.0" text="Mes submissions:" textFill="#171474" AnchorPane.leftAnchor="80.0" AnchorPane.rightAnchor="320.0" AnchorPane.topAnchor="47.0">
                      <font>
                         <Font size="24.0" />
                      </font>

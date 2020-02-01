@@ -1,10 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.net.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
-<?import javafx.scene.text.*?>
 <?import java.net.URL?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
@@ -17,7 +12,7 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" fx:id="rootPane" prefHeight="581.0" prefWidth="835.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="User.Controller.showController">
+<AnchorPane id="AnchorPane" fx:id="rootPane" prefHeight="581.0" prefWidth="835.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="User.Controller.showController">
    <children>
       <GridPane prefHeight="581.0" prefWidth="835.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <columnConstraints>
@@ -29,13 +24,13 @@
          <children>
             <AnchorPane prefHeight="566.0" prefWidth="835.0">
                <children>
-                  <Label layoutX="80.0" layoutY="14.0" prefHeight="66.0" prefWidth="435.0" text="Détail du compétition:" textFill="#323136" AnchorPane.leftAnchor="80.0" AnchorPane.rightAnchor="320.0" AnchorPane.topAnchor="14.0">
+                  <Label layoutX="80.0" layoutY="14.0" prefHeight="66.0" prefWidth="435.0" text=" Les détails de la compétition :" textFill="#171474" AnchorPane.leftAnchor="80.0" AnchorPane.rightAnchor="320.0" AnchorPane.topAnchor="14.0">
                      <font>
                         <Font size="24.0" />
                      </font>
                   </Label>
-                  <Pane layoutX="80.0" layoutY="63.0" prefHeight="7.0" prefWidth="244.0" style="-fx-background-color: #0747A8; -fx-background-radius: 10;" AnchorPane.leftAnchor="80.0" />
-                  <Button fx:id="buttonParticiper" layoutX="661.0" layoutY="524.0" mnemonicParsing="false" onAction="#Participer" prefHeight="33.0" prefWidth="140.0" style="-fx-background-color: #61c566;" text="Participer" textFill="WHITE" AnchorPane.bottomAnchor="35.0" AnchorPane.rightAnchor="34.0">
+                  <Pane layoutX="80.0" layoutY="61.0" prefHeight="9.0" prefWidth="355.0" style="-fx-background-color: #0747A8; -fx-background-radius: 10;" AnchorPane.leftAnchor="80.0" />
+                  <Button fx:id="buttonParticiper" layoutX="470.0" layoutY="517.0" mnemonicParsing="false" onAction="#Participer" prefHeight="38.0" prefWidth="140.0" style="-fx-background-color: #61c566;" text="Participer" textFill="WHITE" AnchorPane.bottomAnchor="26.0" AnchorPane.rightAnchor="225.0">
                      <font>
                         <Font name="Bell MT" size="17.0" />
                      </font>
@@ -53,65 +48,68 @@
                         <RowConstraints maxHeight="101.0" minHeight="10.0" prefHeight="77.0" vgrow="SOMETIMES" />
                     </rowConstraints>
                      <children>
-                        <Label text="Titrel">
+                        <Label prefHeight="30.0" prefWidth="173.0" text="Titre                     :" textFill="#171474">
                            <font>
                               <Font size="20.0" />
                            </font>
                         </Label>
-                        <Label fx:id="Titre" text="Label" GridPane.columnIndex="1">
+                        <Label fx:id="Titre" GridPane.columnIndex="1">
                            <font>
                               <Font name="Bell MT" size="26.0" />
                            </font>
                         </Label>
-                        <Label text="Niveau" GridPane.rowIndex="1">
+                        <Label prefHeight="30.0" prefWidth="172.0" text="Niveau                  :" textFill="#171474" GridPane.rowIndex="1">
                            <font>
                               <Font size="20.0" />
                            </font>
                         </Label>
-                        <Label fx:id="Niveau" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                        <Label fx:id="Niveau" GridPane.columnIndex="1" GridPane.rowIndex="1">
                            <font>
                               <Font name="Bell MT" size="26.0" />
                            </font>
                         </Label>
-                        <Label text="Date début" GridPane.rowIndex="2">
+                        <Label prefHeight="30.0" prefWidth="186.0" text="Date début            :" textFill="#171474" GridPane.rowIndex="2">
                            <font>
                               <Font size="20.0" />
                            </font>
                         </Label>
-                        <Label fx:id="DateFin" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                        <Label fx:id="DateFin" GridPane.columnIndex="1" GridPane.rowIndex="3">
                            <font>
                               <Font name="Bell MT" size="26.0" />
                            </font>
                         </Label>
-                        <Label text="Date fin" GridPane.rowIndex="3">
+                        <Label prefHeight="30.0" prefWidth="178.0" text="Date fin                 :" textFill="#171474" GridPane.rowIndex="3">
                            <font>
                               <Font size="20.0" />
                            </font>
                         </Label>
-                        <Label fx:id="DateDebut" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                        <Label fx:id="DateDebut" GridPane.columnIndex="1" GridPane.rowIndex="2">
                            <font>
                               <Font name="Bell MT" size="26.0" />
                            </font>
                         </Label>
-                        <Label fx:id="NParticipant" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                        <Label fx:id="NParticipant" GridPane.columnIndex="1" GridPane.rowIndex="4">
                            <font>
                               <Font name="Bell MT" size="26.0" />
                            </font>
                         </Label>
-                        <Label text="N° de participant" GridPane.rowIndex="4">
+                        <Label prefHeight="30.0" prefWidth="175.0" text="N° de participant  :" textFill="#171474" GridPane.rowIndex="4">
                            <font>
                               <Font size="20.0" />
                            </font>
                         </Label>
                      </children>
                   </GridPane>
-                  <TableView fx:id="listeProbleme" layoutX="456.0" layoutY="118.0" prefHeight="368.0" prefWidth="345.0" AnchorPane.leftAnchor="456.0" AnchorPane.rightAnchor="34.0">
+                  <TableView fx:id="listeProbleme" layoutX="456.0" layoutY="92.0" prefHeight="394.0" prefWidth="345.0" AnchorPane.leftAnchor="456.0" AnchorPane.rightAnchor="34.0">
                     <columns>
                       <TableColumn fx:id="Probleme" prefWidth="175.0" text="Problème" />
                       <TableColumn fx:id="NiveauPro" prefWidth="175.0" text="Niveau" />
                     </columns>
                   </TableView>
-                  <Button layoutX="324.0" layoutY="520.0" mnemonicParsing="false" onAction="#Rank" text="Rank" />
+                  <Button layoutX="224.0" layoutY="514.0" mnemonicParsing="false" onAction="#Rank" prefHeight="33.0" prefWidth="148.0" style="-fx-background-color: #708090;" text="Le rang" textFill="WHITE">
+                     <font>
+                        <Font size="17.0" />
+                     </font></Button>
                </children>
             </AnchorPane>
          </children>
